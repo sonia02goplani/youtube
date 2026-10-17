@@ -27,9 +27,7 @@ const Header = () => {
           <h1>YOUTUBE</h1>
         </div>
       </div>
-      <div className="flex col-span-10">
         <SearchCard/>
-      </div>
       <div className="flex col-span-1 justify-end">
         <img src={avatarIcon} alt="logo" className="h-8" />
       </div>

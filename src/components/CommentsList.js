@@ -13,10 +13,10 @@ const CommentsList = ({ videoId }) => {
     const json = await data.json();
     setComments(json?.items);
   };
-  if (!comments.length) return null;
+  if (!comments?.length) return null;
   return (
-    <div className="my-5 h-[300px] overflow-y-scroll">
-      <h3 className="font-bold mx-4">  💬 {comments.length}</h3>
+    <div className="my-5 h-[800px] overflow-y-scroll">
+      <h3 className="font-bold mx-4">  💬 {comments?.length}</h3>
       {comments.map((comment) => (
         <CommentCard commentInfo={comment} key={comment?.id} />
       ))}
